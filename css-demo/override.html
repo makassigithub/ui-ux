@@ -1,0 +1,42 @@
+<html>
+<head>
+    <script type="text/javascript">
+    </script>
+    <style>
+        /*
+            Form lowest to highest priority
+            1.element           ex: div
+            2.class             ex: .center
+            3.nested selector   ex: div.center
+            4.id                ex: #colored
+            5.inline style      ex: style="color:brown"
+            6.!mportant
+        */
+
+        #colored {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        p.center {
+         
+          color: red;
+        }
+
+        .center {
+            color: green 
+        }
+
+        div.center {
+            color:orange;
+        }  
+       
+        </style>
+</head>
+<body>
+    <p class="center">
+        Inside p
+        <div  id="colored" class="center" style="color:brown"> this is for test</div>
+    </p>
+</body>
+</html>

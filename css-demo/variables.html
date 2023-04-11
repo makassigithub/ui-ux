@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            :root{
+                --cyanblue: #1e90ff;
+            }
+
+            h1,h2{
+                background-color: var(--cyanblue);
+            }
+
+            h2{
+                --cyanblue: #6cc
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Will be affected by the global variable</h1>
+        </div>
+        <div>
+            <h1>The local variable overrides de global one</h1>
+        </div>
+    </body>
+</html>
